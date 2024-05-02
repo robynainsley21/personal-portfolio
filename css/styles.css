@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --primary: #DBA39A;
+    --secondary: #F0DBDB;
+    --complimentary: #F5EBE0;
+    --bg: #FEFCF3;
+}
+
+/* general */
+body{
+    background-color: var(--bg);
+}
+
+/* navbar */
+nav{
+    background-color: var(--primary);
+}
+
+img[alt="logo"]{
+    width: 4rem;
+    border-radius: 100%;
+    margin: auto 1rem;
+}
+
+.navbar-collapse{
+    margin-left: 70%;
+}
