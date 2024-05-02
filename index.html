@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="shortcut icon" href="https://robynainsley21.github.io/images/images/Portfolio logo (1).png" type="image/x-icon">
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,35 +35,50 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div id="nav-container">
-          <a class="navbar-brand" href="index.html"
-            ><img
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
               src="https://robynainsley21.github.io/images/images/Portfolio logo (1).png"
               alt="logo"
-          /></a>
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
-              <a class="nav-link" href="#about">About</a>
-              <a class="nav-link" href="#resume">Resume</a>
-              <a class="nav-link" href="#skills">Skills</a>
-              <a class="nav-link" href="#testimonials">Testimonials</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#contact">Contact</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -94,9 +111,32 @@
           to adapt to my environment.
         </p>
       </section>
-      <section id="resume" class="section-height"><h2>Resume</h2></section>
+      <section id="resume" class="section-height">
+        <h2>Resume</h2>
+        <h4>Education</h4>
+        <div class="education-container">
+            <div class="card" style="width: 18rem;">
+                <img src="https://robynainsley21.github.io/images/personal-portfolio/tuscany-secondary.jpg" class="card-img-top" alt="education-img">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn education-btn">Visit site</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://robynainsley21.github.io/images/personal-portfolio/uwc-img.jpg" class="card-img-top" alt="education-img">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn education-btn">Visit site</a>
+                </div>
+              </div>
+        </div>
+      </section>
       <section id="skills" class="section-height"><h2>Skills</h2></section>
-      <section id="testimonials" class="section-height"><h2>Testimonials</h2></section>
+      <section id="testimonials" class="section-height">
+        <h2>Testimonials</h2>
+      </section>
       <section id="projects" class="section-height"><h2>Projects</h2></section>
       <section id="contact" class="section-height"><h2>Contact</h2></section>
     </main>

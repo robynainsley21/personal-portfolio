@@ -19,6 +19,7 @@
 
 /* general */
 body{
+    position: relative;
     background-color: var(--bg);
     font-family: "Julius Sans One", sans-serif;
 }
@@ -28,44 +29,73 @@ body{
 }
 
 /* navbar */
-nav{
-    /* background-color: var(--primary); */
+.navbar{
+    padding-top: 2rem;
     z-index: 9;
 }
 
 img[alt="logo"]{
-    width: 4rem;
+    width: 5rem;
     border-radius: 100%;
     margin: auto 1rem;
 }
 
-.navbar-collapse{
-    margin-left: 70%;
-}
-
 /* hero section */
 img[alt="hero-img"]{
-    width: 15rem;
+    width: 20rem;
 }
 
 #hero{
     display: flex;
     position: relative;
     justify-content: space-around;
-    margin: 8rem auto;
     align-items: center;
     text-align: center;
     z-index: 9;
+    margin: 10% auto;
+}
+
+#home{
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 img[alt="hero-bg"]{
     position: absolute;
     top: 0;
-    height: 100vh;
+    /* min-height: 100vh; */
     width: 100vw;
 }
 
 /* about section */
 #about{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+#about > p{
+    width: 70%;
+}
+
+/* resume section */
+#resume{
+    text-align: center;
+}
+
+#resume > h2{
+    padding-top: 3rem;
+}
+
+.education-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.education-btn{
+    background-color: var(--primary);
 }
