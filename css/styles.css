@@ -17,7 +17,25 @@
     --bg: #FEFCF3;
 }
 
+@property --top-left {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --top-right {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
 /* general */
+header{
+    background-image: url("https://robynainsley21.github.io/images/personal-portfolio/soft-bg.png");
+ background-repeat: no-repeat;
+ object-fit: contain;
+}
+
 body{
     position: relative;
     background-color: var(--bg);
@@ -42,7 +60,8 @@ img[alt="logo"]{
 
 /* hero section */
 img[alt="hero-img"]{
-    width: 20rem;
+    width: 25rem;
+    border-radius: 50%;
 }
 
 #hero{
@@ -52,7 +71,7 @@ img[alt="hero-img"]{
     align-items: center;
     text-align: center;
     z-index: 9;
-    margin: 10% auto;
+    margin-top: 5%;
 }
 
 #home{
@@ -64,7 +83,7 @@ img[alt="hero-bg"]{
     position: absolute;
     top: 0;
     /* min-height: 100vh; */
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 /* about section */
@@ -97,5 +116,10 @@ img[alt="hero-bg"]{
 }
 
 .education-btn{
+    background-color: var(--complimentary);
+    font-weight: bold;
+}
+
+#resume .card{
     background-color: var(--primary);
 }
