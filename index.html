@@ -38,7 +38,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img
@@ -88,9 +88,9 @@
         </div>
       </nav>
       <section id="home">
-        <div id="hero" class="row">
+        <div id="hero" class="flex-md-row flex-sm-column">
           <img
-          class="col-sm-12 col-lg-6 mb-5 "
+            class="col-sm-12 col-lg-6 mb-5 img-fluid"
             src="https://robynainsley21.github.io/images/images/headshot.JPG"
             alt="hero-img"
             loading="lazy"
@@ -103,9 +103,9 @@
       </section>
     </header>
     <main>
-      <section id="about" class="section-height">
-        <h2>About</h2>
-        <p>
+      <section id="about">
+        <h2 class="display-2">About</h2>
+        <p class="lead shadow-lg">
           I am an open-minded and creative person, and enjoy learning about the
           world of technology, the interest for which had stemmed from curiosity
           of the new world. In my free time, I enjoy reading books on
@@ -114,8 +114,8 @@
           to adapt to my environment.
         </p>
       </section>
-      <section id="resume" class="section-height">
-        <h2>Resume</h2>
+      <section id="resume">
+        <h2 class="display-2">Resume</h2>
         <h4>Education</h4>
         <div class="education-container">
           <div class="card" style="width: 18rem">
@@ -175,12 +175,34 @@
           </div>
         </div>
       </section>
-      <section id="skills" class="section-height"><h2>Skills</h2></section>
-      <section id="testimonials" class="section-height">
-        <h2>Testimonials</h2>
+      <section id="skills">
+        <h2 class="display-2">Skills</h2>
+        <div class="row skills-box">
+          <div class="col-md-6">
+            <ul class="skill-box">
+              <li>Soft skills</li>
+              <li>Communication</li>
+              <li>Self-awareness</li>
+              <li>Collaboration & Teamwork</li>
+            </ul>
+          </div>
+          <div class="col-md-6 skill-box2">
+            <ul class="skills-list2">
+              <li>Technical Skills</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>MS Word</li>
+              <li>Ms Excel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skills-box"></div>
       </section>
-      <section id="projects" class="section-height"><h2>Projects</h2></section>
-      <section id="contact" class="section-height"><h2>Contact</h2></section>
+      <section id="testimonials">
+        <h2 class="display-2">Testimonials</h2>
+      </section>
+      <section id="projects"><h2 class="display-2">Projects</h2></section>
+      <section id="contact"><h2 class="display-2">Contact</h2></section>
     </main>
   </body>
 </html>
