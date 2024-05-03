@@ -199,9 +199,9 @@ span[aria-hidden="true"]{
     background-color: var(--primary);
 }
 
-.project-row{
+/* .project-row{
     display: flex;
-}
+} */
 
 /* media queries */
  /* mobile */
