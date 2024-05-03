@@ -41,6 +41,10 @@ body {
   font-family: "Julius Sans One", sans-serif;
 }
 
+.center-text{
+    text-align: center;
+}
+
 /* navbar */
 .navbar {
   padding-top: 2rem;
@@ -60,6 +64,10 @@ img[alt="logo"] {
   margin: auto 1rem;
 }
 
+.card{
+    width: 18rem;
+}
+
 /* hero section */
 img[alt="hero-img"] {
   width: 25rem;
@@ -70,7 +78,6 @@ img[alt="hero-img"] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
   margin-top: 5%;
 }
 
@@ -86,7 +93,6 @@ img[alt="hero-img"] {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary);
-  text-align: center;
   height: 100vh;
 }
 
@@ -95,10 +101,6 @@ img[alt="hero-img"] {
 }
 
 /* resume section */
-#resume {
-  text-align: center;
-}
-
 #resume > h2 {
   padding-top: 3rem;
 }
@@ -139,10 +141,6 @@ img[alt="hero-img"] {
     margin-top: 2rem;
 }
 
-#skills h2{
-    text-align: center;
-}
-
 #skills ul{
     padding-left:0 ;
 }
@@ -162,6 +160,32 @@ img[alt="hero-img"] {
 
 .skills-list2{
     text-align: right;
+}
+
+/* testimonials */
+#testimonials{
+ height: 100vh;
+}
+
+#testimonials{
+    padding-top: 5%;
+}
+
+#testimonials .card{
+    display: flex;
+}
+
+#carouselExampleControls{
+    height: 70%;
+    margin-top: 5% ;
+}
+
+span[aria-hidden="true"]{
+    background-color: #000;
+}
+
+.carousel-item > .card{
+    margin: auto;
 }
 
 /* media queries */
