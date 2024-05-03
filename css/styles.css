@@ -1,127 +1,180 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-:root{
-    --primary: #DBA39A;
-    --secondary: #F0DBDB;
-    --complimentary: #F5EBE0;
-    --bg: #FEFCF3;
+:root {
+  --primary: #dba39a;
+  --secondary: #f0dbdb;
+  --complimentary: #f5ebe0;
+  --bg: #fefcf3;
 }
-
+/* 
 @property --top-left {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 50%;
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
 }
 
 @property --top-right {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 50%;
-}
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+} */
 
 /* general */
-header{
-    background-image: url("https://robynainsley21.github.io/images/personal-portfolio/soft-bg.png");
- background-repeat: no-repeat;
- object-fit: contain;
+header {
+  background-image: url("https://robynainsley21.github.io/images/personal-portfolio/soft-bg.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
 }
 
-body{
-    position: relative;
-    background-color: var(--bg);
-    font-family: "Julius Sans One", sans-serif;
-}
-
-.section-height{
-    height: 100vh;
+body {
+  background-color: var(--bg);
+  font-family: "Julius Sans One", sans-serif;
 }
 
 /* navbar */
-.navbar{
-    padding-top: 2rem;
-    z-index: 9;
+.navbar {
+  padding-top: 2rem;
+  z-index: 9;
 }
 
-img[alt="logo"]{
-    width: 5rem;
-    border-radius: 100%;
-    margin: auto 1rem;
-}
-
-/* hero section */
-img[alt="hero-img"]{
-    width: 25rem;
-    border-radius: 50%;
-}
-
-#hero{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin-top: 5%;
-}
-
-#home{
-    overflow: hidden;
-    min-height: 100vh;
-}
-
-/* about section */
-#about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary);
-    text-align: center;
-}
-
-#about > p{
-    width: 70%;
-}
-
-/* resume section */
-#resume{
-    text-align: center;
-}
-
-#resume > h2{
-    padding-top: 3rem;
-}
-
-.education-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;
-}
-
-.education-btn{
-    background-color: var(--complimentary);
+.navbar a {
     font-weight: bold;
 }
 
-#resume .card{
-    background-color: var(--primary);
+img[alt="logo"] {
+  width: 5rem;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  margin: auto 1rem;
 }
 
-.experience-container{
+/* hero section */
+img[alt="hero-img"] {
+  width: 25rem;
+  border-radius: 50%;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#home {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* about section */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  text-align: center;
+  height: 100vh;
+}
+
+#about > p {
+  width: 70%;
+}
+
+/* resume section */
+#resume {
+  text-align: center;
+}
+
+#resume > h2 {
+  padding-top: 3rem;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.education-btn {
+  background-color: var(--complimentary);
+  font-weight: bold;
+}
+
+#resume .card {
+  background-color: var(--primary);
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.experience-container > p {
+  font-size: 1.5rem;
+}
+
+/* skills section */
+#skills {
+    height: 100vh;
+    background-color: var(--complimentary);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-.experience-container > p{
-    font-size: 1.5rem;
+#skills h2{
+    text-align: center;
+}
+
+#skills ul{
+    padding-left:0 ;
+}
+
+.skills-box{
+    margin: 2rem 3rem;
+}
+
+.skills-box li{
+    list-style: none;
+    margin-top: 7px;
+}
+
+.skills-box li:first-child{
+    font-weight: bold;
+}
+
+.skills-list2{
+    text-align: right;
+}
+
+/* media queries */
+ /* mobile */
+@media screen and (max-width: 425px){
+    
+}
+
+/* tablet */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    /* skills section */
+    .skill-box2{
+        position: absolute;
+        right: 6%;
+    }
 }
